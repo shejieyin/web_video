@@ -1,0 +1,129 @@
+@primary-color: rgba(16,82,240,1);
+@sub-color: rgba(16,82,240,.6);
+@border-color: #F0F0F0;
+@box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+
+.icon(@bgImg, @w: 24px, @h: 24px) {
+  display: inline-block;
+  width: @w;
+  height: @h;
+  background-image: url(@bgImg);
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-primary {
+  .btn;
+  color: @sub-color;
+  border: 1px solid @sub-color;
+  font-size: 14px;
+}
+
+.button-default {
+  .btn;
+  background: @sub-color;
+  color: #fff;
+}
+
+.shadow-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  width: 350px;
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 50vh 0 0 50vw;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  position: relative;
+}
+.logo-image {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.right-content{
+    width: 270px;
+}
+.user-info {
+  padding: 12px 0;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &>div {
+    height: 60px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+}
+.article-title {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 0;
+  line-height: 24px;
+}
+
+.article-content {
+  color: #999999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.article-number {
+  padding: 5px 8px 0 0;
+  color:#999999;
+  span{
+    vertical-align: middle;
+  }
+  img{
+    width: 20px !important;
+    vertical-align: middle;
+  }
+}
+.content-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: @box-shadow;
+  min-height: calc(100vh - 100px);
+}
+.fresh {
+  cursor: pointer;
+}
+.prompt {
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+  padding: 20px 0;
+}
+
+.container{
+  width: 1180px;
+  margin:0 auto;
+}
